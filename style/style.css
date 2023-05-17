@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box
+}
+body{
+    background-color:#130f0d;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+#instruções {
+    color: aqua;
+}
+
+#fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+#piano{
+    width:100%;
+    max-width:600px;
+    height:300px;
+    margin:16px auto;
+    border-radius:20px 20px 8px 8px;
+    overflow:hidden;
+    background: #783c00;
+    -webkit-box-shadow:0px 0px 10px 10px rgba(0,0,0,0.12);
+    box-shadow:0px 0px 10px 10px rgba(0,0,0,0.12);
+    border:1px solid #964b00;
+    z-index: 5;
+}
+#piano-container{
+    width:95%;
+    height:230px;
+    margin:60px auto 0 auto;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex
+}
+#piano-container li{
+    width:14.28%;
+    height:100%;
+    list-style-type:none;
+    position:relative;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex
+}
+.white{
+    width:100%;
+    height:100%;
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.5);
+    box-shadow:0 1px 1px rgba(0,0,0,0.5);
+    position:relative;
+    z-index:1;
+    background:#f0f0f9
+}
+.black{
+    position:absolute;
+    right:-35%;
+    z-index:2;
+    width:70%;
+    height:120px;
+    background:#000
+}
